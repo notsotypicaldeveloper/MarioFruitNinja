@@ -18,8 +18,8 @@ function setGame() {
         document.getElementById("board").appendChild(tile);
     }
 
-    setInterval(setFruit, 500); // 1000 milliseconds = 2 seconds
-    setInterval(setPlant, 1000);
+    setInterval(setFruit, 2000); // 1000 milliseconds = 2 seconds
+    setInterval(setPlant, 3000);
 }
 
 function getRandomTile() {
