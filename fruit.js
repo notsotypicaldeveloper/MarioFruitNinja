@@ -18,8 +18,8 @@ function setGame() {
         document.getElementById("board").appendChild(tile);
     }
 
-    setInterval(setFruit, 2000); // 1000 milliseconds = 2 seconds
-    setInterval(setPlant, 3000);
+    setInterval(setFruit, 1500); // 1000 milliseconds = 2 seconds
+    setInterval(setPlant, 2500);
 }
 
 function getRandomTile() {
@@ -42,7 +42,7 @@ function setFruit() {
     fruitImg.src = "./images/fruit.png";
 
     let num = getRandomTile();
-    if(currentPlantTile && currentFruitTile.id == num) {
+    if(currentPlantTile && currentPlantTile.id == num) {
         return;
     }
     currentFruitTile = document.getElementById(num);
